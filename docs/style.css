@@ -1,0 +1,88 @@
+        /* Any additional RTL-specific styles that can't be handled by Tailwind */
+        body {
+            font-family: 'Cairo', sans-serif;
+        }
+
+/* Custom Scrollbar for Sidebar and Search Results */
+.custom-scrollbar::-webkit-scrollbar {
+    width: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb {
+    background: #d1d5db;
+    border-radius: 5px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+    background: #9ca3af;
+}
+
+/* Table of Contents */
+.toc-link {
+    display: block;
+    padding: 0.5rem 0;
+    color: #4b5563;
+    border-left: 2px solid transparent;
+    padding-left: 1rem;
+}
+
+.toc-link:hover {
+    color: #f4921d;
+}
+
+.toc-link.active {
+    color: #f4921d;
+    border-left-color: #f4921d;
+    font-weight: 600;
+}
+
+/* RTL support for TOC */
+html[dir="rtl"] .toc-link {
+    border-left: none;
+    border-right: 2px solid transparent;
+    padding-left: 0;
+    padding-right: 1rem;
+}
+
+html[dir="rtl"] .toc-link.active {
+    border-right-color: #f4921d;
+}
+
+/* Search Results */
+#searchResults {
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #e5e7eb;
+    border-top: none;
+    border-radius: 0 0 0.5rem 0.5rem;
+}
+
+#searchResults a:last-child {
+    border-bottom: none;
+}
+
+/* Highlight for search text */
+.search-highlight {
+    background-color: rgba(244, 146, 29, 0.2);
+    padding: 0 2px;
+    border-radius: 2px;
+}
+
+/* Search animation */
+@keyframes search-pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.search-pulse {
+    animation: search-pulse 0.5s ease-in-out;
+}
+
+/* Responsiveness for search results on mobile */
+@media (max-width: 640px) {
+    #searchResults {
+        max-height: 300px;
+    }
+}
