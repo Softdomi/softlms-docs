@@ -150,7 +150,7 @@ $imageSrc = $current_lang === 'ar' ? 'inst-dashboard-ar.png' : 'inst-dashboard-e
        
     <?php
 
-$imageSrc = $current_lang === 'ar' ? 'inst-payout-report-ar.png' : 'inst-payout-report-en.png';
+$imageSrc = $current_lang === 'ar' ? 'inst-sale-report-ar.png' : 'inst-sale-report-en.png';
 ?>
 
 <div class="img object-fit-cover">
@@ -183,7 +183,7 @@ $imageSrc = $current_lang === 'ar' ? 'inst-payout-report-ar.png' : 'inst-payout-
        
     <?php
 
-$imageSrc = $current_lang === 'ar' ? 'ins-payout-report-ar.png' : 'inst-payout-report-en.png';
+$imageSrc = $current_lang === 'ar' ? 'ins-payout-rep-ar.png' : 'inst-payout-rep-en.png';
 ?>
 
 <div class="img object-fit-cover">

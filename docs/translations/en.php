@@ -411,6 +411,8 @@ This page displays the students and the courses they have purchased, along with 
 'sys_settings_subtitle'=>'Manage system settings from here.',
 'sys_settings_desc1'=>
 "This page contains settings related to the website name – the option to enable or disable email verification for users upon account creation – selecting the website language – specifying the number of allowed devices to access the platform, whether desktop, mobile, or others, along with other settings." ,
+'sys_settings_desc2'=>'There is a very important matter, which is setting the time zone. This setting is available on this page to avoid any issues when setting the time or date for exams, assignments, or anything that depends on time and date.
+' ,
 
 'website_settings'=>'Website Settings' ,
 'website_settings_subtitle'=>'Manage website settings from here.',
@@ -482,7 +484,26 @@ Through these settings, the administrator can select the AI model to be used, de
 'manage_profile'=> 'Manage Profile' ,
 'manage_profile_subtitle'=>'Manage your profile from here.',
 'manage_profile_desc1'=>'The admin can edit their profile, such as changing their name, email address, social media accounts, and more, as shown in the image.' ,
+
+'coupons'=> 'Coupons' ,
+'coupons_subtitle'=>'Manage coupons from here.',
+'coupons_desc1'=>'You can add and manage discount coupons through this page, 
+While creating the coupon, you can specify the number of users allowed to use it, or set it to zero, where zero indicates unlimited usage of the coupon.
+' ,
+
+'help'=> 'Help' ,
+'help_subtitle'=>'Below is an explanation of how to contact us in case of any problem or to inquire about anything.',
+'way1'=>'Contact Us Page' ,
+'way1_subtitle'=>'Contact us at any time and you will receive an immediate response.',
+'way1_desc1'=>'Through this page, you can contact us, and your details and message will be delivered to the administrator. You will receive an immediate response via a text message sent to your email.
+' ,
+'way2'=> 'Complaints Page' ,
+'way2_subtitle'=>'If you have any complaints, you can submit them through this page.',
+'way2_desc1'=>"
+Through this page, you can report any issue you are facing by selecting the type of problem, attaching an image or document for clarification, and writing a description of the issue. You will receive an immediate response through the platform's messaging system." ,
+
 ];
+
 
 // ================ إضافة مصفوفة خاصة بروابط الصفحات لاستخدامها في البحث ================
 // تعريف الصفحات وعناوينها ورابطها
@@ -574,7 +595,7 @@ $pages_data = [
             'course_category_desc3' , 'course_bundle' ,  'course_bundle_subtitle' ,  'course_bundle_desc1' , 
              'course_bundle_desc2'  , 'course_bundle' , 'course_bundle_subtitle' ,
               'course_bundle_desc1' ,'course_bundle_desc2'  , 'subsc_report' , 'subsc_report_subtitle' ,
-              'subsc_report_desc1' , 'subsc_report_desc2' ,
+              'subsc_report_desc1' , 'subsc_report_desc2' , 'coupons' , 'coupons_subtitle' , 'coupons_desc1'
         ]
     ],
     'report' => [
@@ -651,6 +672,7 @@ $pages_data = [
         'url' => '/docs/settings.php',
         'title' => 'Settings',
         'keys' => ['settings' , 'settings_subtitle' , 'sys_settings' , 'sys_settings_subtitle' , 'sys_settings_desc1' ,
+         'sys_settings_desc2'  ,
         'settings_subtitle' , 'website_settings' , 'website_settings_subtitle' ,  'website_settings_subtitle' , 
         'drip_content_settings' , 'drip_content_settings_subtitle' ,  'drip_content_settings_subtitle' , 
         'cert_settings' , 'cert_settings_subtitle' ,  'cert_settings_subtitle' , 
@@ -671,6 +693,11 @@ $pages_data = [
         'url' => '/docs/admin-manage-profile.php',
         'title' => 'Manage Profile',
         'keys' => ['manage_profile' , 'manage_profile_subtitle' , 'manage_profile_desc1' ]
+    ],
+    'help' => [
+        'url' => '/docs/help.php',
+        'title' => 'Help',
+        'keys' => ['help' , 'help_subtitle' ,'way1' , 'way1_subtitle','way1_desc1' ,'way2' , 'way2_subtitle','way2_desc1' ]
     ],
 ];
 

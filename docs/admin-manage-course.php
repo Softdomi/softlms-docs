@@ -764,6 +764,51 @@ $imageSrc = $current_lang === 'ar' ? 'category-ar.png' : 'category-en.png';
     </div>
     </div>
 
+    <!-- coupons --------------- -->
+      
+    <div>
+
+<div class="border-b pb-4 mb-6">
+  <h1 class="text-2xl font-bold text-secondary"><?php echo $translations['coupons']; ?></h1>
+     <p class="text-gray-600 mt-2"><?php echo $translations['coupons_subtitle']; ?></p>
+ </div>
+<!--coupons---------------------------------- -->
+ <div class="  mb-16   <?php echo $current_lang == 'ar ' ? ' rtl' : ' ltr'; ?>">
+
+
+    <div class="course-basic mb-16 ">
+       
+    <?php
+$imageSrc = $current_lang === 'ar' ? 'coupons-ar.png' : 'coupons-en.png';
+?>
+
+<div class="img object-fit-cover">
+    <img src="../assets/images/docs-imgs/<?= $imageSrc ?>" alt="coupons " class="w-full">
+</div>
+       <div class="content p-6 border border-xl rounded-md border-s-4 border-s-primary shadow mt-6 mb-12">
+       <h2 class = " flex gap-2 font-bold font-medium text-md mb-4 "> <span>
+       <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+  <path stroke-linecap="round" stroke-linejoin="round" d="M12 9v3.75m-9.303 3.376c-.866 1.5.217 3.374 1.948 3.374h14.71c1.73 0 2.813-1.874 1.948-3.374L13.949 3.378c-.866-1.5-3.032-1.5-3.898 0L2.697 16.126ZM12 15.75h.007v.008H12v-.008Z" />
+</svg>
+
+       </span><span> <?php echo $translations['attention']; ?> </span>  </h2>
+       <div class=" flex mb-2">
+         <div class="flex-shrink-0  flex items-center justify-center text-white font-bold"> <svg class="h-5 w-6 text-primary flex-shrink-0 <?php echo $current_lang == 'ar' ? '' : ''; ?>" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="5" d="M5 13l4 4L19 7" />
+             </svg></div>
+             <div class="ms-2">
+                <h3 class="font-semibold text-secondary"><?php echo $translations['coupons_desc1']; ?></h3>
+                            
+            </div>
+          </div>  
+              
+       </div>
+
+    
+    </div>
+    </div>
+    </div>
+
     <!--course bundle ----------------------------------- -->
          
     <div>
@@ -833,7 +878,7 @@ $imageSrc = $current_lang === 'ar' ? 'course-bundle-ar.png' : 'course-bundle-en.
     <div class="bundle mb-16 ">
        
     <?php
-$imageSrc = $current_lang === 'ar' ? 'subscription-report-ar.png' : 'subscription-report-en.png';
+$imageSrc = $current_lang === 'ar' ? 'subscribtion-report-ar.png' : 'subscribtion-report-en.png';
 ?>
 
 <div class="img object-fit-cover">

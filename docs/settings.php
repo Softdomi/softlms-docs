@@ -93,6 +93,15 @@ $active_section = 'getting-started';
             </div>
           </div>  
               
+          <div class=" flex mb-2">
+         <div class="flex-shrink-0  flex items-center justify-center text-white font-bold"> <svg class="h-5 w-6 text-primary flex-shrink-0 <?php echo $current_lang == 'ar' ? '' : ''; ?>" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="5" d="M5 13l4 4L19 7" />
+             </svg></div>
+             <div class="ms-2">
+                <h3 class="font-semibold text-secondary"><?php echo $translations['sys_settings_desc2']; ?></h3>
+                            
+            </div>
+          </div> 
        </div>
 
     
