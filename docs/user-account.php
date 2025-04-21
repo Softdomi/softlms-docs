@@ -7,7 +7,7 @@ include_once "translations/{$current_lang}.php";
 
 // تحديد الصفحة الحالية لتفعيل العنصر في شريط التنقل
 $page = 'docs';
-$active_section = 'getting-started';
+$active_section = 'user-account';
 ?>
 
 <!DOCTYPE html>
@@ -155,7 +155,7 @@ $imageSrc = $current_lang === 'ar' ? 'verify-email-ar.png' : 'verify-email-en.pn
     <div class="confirm-email mb-16 ">
     <?php
 
-$imageSrc = $current_lang === 'ar' ? 'verify-email-ar.png' : 'verify-email-en.png';
+$imageSrc = $current_lang === 'ar' ? 'confirm-account-ar.png' : 'confirm-account-en.png';
 ?>
 
 <div class="img object-fit-cover">

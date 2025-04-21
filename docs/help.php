@@ -7,7 +7,7 @@ include_once "translations/{$current_lang}.php";
 
 // تحديد الصفحة الحالية لتفعيل العنصر في شريط التنقل
 $page = 'docs';
-$active_section = 'getting-started';
+$active_section = 'help';
 ?>
 
 <!DOCTYPE html>

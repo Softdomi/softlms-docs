@@ -60,7 +60,7 @@
 <!-- Students Guides -->
 <li class="relative w-full z-20 ">
   <button onclick="toggleDropdown(event)" class="flex items-center w-full p-2 rounded-lg transition-all 
-    <?php echo $active_section == 'user-guides' ? 'bg-primary bg-opacity-10 text-primary font-medium' : 'hover:bg-gray-100'; ?>">
+    <?php echo $active_section == 'students_guide' ? 'bg-primary bg-opacity-10 text-primary font-medium' : 'hover:bg-gray-100'; ?>">
     
     <!-- Icon -->
     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 <?php echo $current_lang == 'ar' ? 'ml-2' : 'mr-2'; ?>" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -79,7 +79,7 @@
   <ul class="dropdown-menu absolute left-0 hidden mt-2 w-full space-y-2 bg-white  rounded-md z-20">
 
     <li>
-      <a href="course-pruchase.php<?php echo $current_lang != 'ar' ? '?lang=' . $current_lang : ''; ?>" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md text-sm">
+      <a href="course-pruchase.php<?php echo $current_lang != 'ar' ? '?lang=' . $current_lang : ''; ?>" class="flex items-center px-4 py-2 text-gray-700  rounded-md text-sm <?php echo $active_section == 'course-pruchase' ? 'bg-primary bg-opacity-10 text-primary font-medium' : 'hover:bg-gray-100'; ?>">
         <svg class="h-5 w-5 ms-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13" />
         </svg>
@@ -87,7 +87,7 @@
       </a>
     </li>
     <li>
-      <a href="course-after-pruchase.php<?php echo $current_lang != 'ar' ? '?lang=' . $current_lang : ''; ?>" class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md text-sm">
+      <a href="course-after-pruchase.php<?php echo $current_lang != 'ar' ? '?lang=' . $current_lang : ''; ?>" class="flex items-center px-4 py-2 text-gray-700  rounded-md text-sm <?php echo $active_section == 'course-after-pruchase' ? 'bg-primary bg-opacity-10 text-primary font-medium' : 'hover:bg-gray-100'; ?>">
         <svg class="h-5 w-5 ms-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
           <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13" />
         </svg>
@@ -100,7 +100,7 @@
                       <!-- Instructors Guides -->
 <li class="relative w-full z-10 ">
   <button onclick="toggleDropdown(event)" class="flex items-center w-full p-2 rounded-lg transition-all 
-    <?php echo $active_section == 'user-guides' ? 'bg-primary bg-opacity-10 text-primary font-medium' : 'hover:bg-gray-100'; ?>">
+    <?php echo $active_section == 'instructors_guide' ? 'bg-primary bg-opacity-10 text-primary font-medium' : 'hover:bg-gray-100'; ?>">
     
     <!-- Icon -->
     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 <?php echo $current_lang == 'ar' ? 'ml-2' : 'mr-2'; ?>" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -119,8 +119,8 @@
   <ul class="dropdown-menu absolute left-0 hidden mt-2 w-full space-y-2 bg-white  rounded-md z-20">
   <li>
             <a href="instructor-dashboard.php<?php echo $current_lang != 'ar' ? '?lang=' . $current_lang : ''; ?>" 
-               class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md w-full text-sm">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ms-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md w-full text-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ms-1" fill="none" viewBo class="flex items-center p-2 rounded-lg <?php echo $active_section == 'instructor-dashboard' ? 'bg-primary bg-opacity-10 text-primary font-medium' : 'hover:bg-gray-100'; ?>"x="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13" />
                 </svg>
                 <?php echo $translations['inst_dashboard']; ?>
@@ -128,7 +128,7 @@
         </li>
         <li>
             <a href="instructor-manage-course.php<?php echo $current_lang != 'ar' ? '?lang=' . $current_lang : ''; ?>" 
-               class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md w-full text-sm">
+            class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md w-full text-sm">
                 <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ms-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13" />
                 </svg>
@@ -142,7 +142,7 @@
 
                       <li class="relative w-full z-8 ">
   <button onclick="toggleDropdown(event)" class="flex items-center w-full p-2 rounded-lg transition-all 
-    <?php echo $active_section == 'user-guides' ? 'bg-primary bg-opacity-10 text-primary font-medium' : 'hover:bg-gray-100'; ?>">
+    <?php echo $active_section == 'admins_guide' ? 'bg-primary bg-opacity-10 text-primary font-medium' : 'hover:bg-gray-100'; ?>">
     
     <!-- Icon -->
     <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 <?php echo $current_lang == 'ar' ? 'ml-2' : 'mr-2'; ?>" fill="none" viewBox="0 0 24 24" stroke="currentColor">
@@ -269,8 +269,8 @@
         </li>
         <li>
             <a href="admin-manage-profile.php<?php echo $current_lang != 'ar' ? '?lang=' . $current_lang : ''; ?>" 
-               class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md w-full text-sm">
-                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 ms-1" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+            class="flex items-center px-4 py-2 text-gray-700 hover:bg-gray-100 rounded-md w-full text-sm">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 <?php echo $current_lang == 'ar' ? 'ml-2' : 'mr-2';  $active_section == 'help' ? 'bg-primary bg-opacity-10 text-primary font-medium' : 'hover:bg-gray-100'; ?>" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                     <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 6.253v13" />
                 </svg>
                 <?php echo $translations['manage_profile']; ?>
@@ -282,8 +282,8 @@
                     
                         <!-- help -->
                         <li>
-                    <a href="help.php<?php echo $current_lang != 'ar' ? '?lang=' . $current_lang : ''; ?>" class="flex items-center p-2 rounded-lg <?php echo $active_section == 'getting-started' ? 'bg-primary bg-opacity-10 text-primary font-medium' : 'hover:bg-gray-100'; ?>">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 <?php echo $current_lang == 'ar' ? 'ml-2' : 'mr-2';  $active_section == 'getting-started' ? 'bg-primary bg-opacity-10 text-primary font-medium' : 'hover:bg-gray-100'; ?>" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
+                    <a href="help.php<?php echo $current_lang != 'ar' ? '?lang=' . $current_lang : ''; ?>" class="flex items-center p-2 rounded-lg <?php echo $active_section == 'help' ? 'bg-primary bg-opacity-10 text-primary font-medium' : 'hover:bg-gray-100'; ?>">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5 <?php echo $current_lang == 'ar' ? 'ml-2' : 'mr-2';  $active_section == 'help' ? 'bg-primary bg-opacity-10 text-primary font-medium' : 'hover:bg-gray-100'; ?>" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" >
   <path stroke-linecap="round" stroke-linejoin="round" d="M9.879 7.519c1.171-1.025 3.071-1.025 4.242 0 1.172 1.025 1.172 2.687 0 3.712-.203.179-.43.326-.67.442-.745.361-1.45.999-1.45 1.827v.75M21 12a9 9 0 1 1-18 0 9 9 0 0 1 18 0Zm-9 5.25h.008v.008H12v-.008Z" />
 </svg>
                         <?php echo $translations['help']; ?>
